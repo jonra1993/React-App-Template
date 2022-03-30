@@ -1,7 +1,7 @@
 /* eslint-disable no-bitwise */
 import jwtDecode, { JwtPayload } from 'jwt-decode';
 
-export const JWT_SECRET = 'jrtec-top-secret-key';
+export const JWT_SECRET = process.env.REACT_APP_JWT_SECRET;
 export const JWT_EXPIRES_IN = 3600 * 24 * 2; // 2 days
 
 // Since we are unable to sign a JWT in a browser
